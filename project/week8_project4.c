@@ -17,13 +17,9 @@ int main(void)
 
     while(i<=n)
     {
-        num = rand();
-
-        if(a<=num && num<=b)
-        {
-            printf("%d ", num);
-            i++;
-        }
+        num = (rand()%(b-a+1)) +a;
+        printf("%d ", num);
+        i++;
         
     }
     
